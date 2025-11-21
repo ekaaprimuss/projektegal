@@ -5,15 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Header Dinas</title>
   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+      .swiper {
+        width: 100%;
+        height: 500px;
+      }
+      
+    </style>
 </head>
 
-<body class="bg-gray-50">
+    <body class="bg-gray-50">
 
-<!-- TOP HEADER LOGO -->
-<header class="w-full bg-white shadow-sm">
-  <div class="container mx-auto w-full flex items-center justify-between px-7 py-4">
+    <!-- TOP HEADER LOGO -->
+    <header class="w-full bg-white shadow-sm">
+      <div class="container mx-auto w-full flex items-center justify-between px-7 py-4">
     <!-- KIRI LOGO -->
-    <div class="flex items-center space-x-5">
+    <div class="container mx auto flex items-center space-x-5">
       <img 
         src="https://dp3ap2kb.tegalkab.go.id/storage/2024/04/1714202466.1712648438.logo.png" 
         class="w-50 h-50 object-contain"
@@ -21,7 +31,7 @@
     </div>
 
     <!--  KANAN LOGO-->
-    <div class="flex flex-wrap items-center justify-end mb-10 gap-6">
+    <div class="container mx auto flex flex-wrap items-center justify-end mb-10 gap-6">
       <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719504224.png" class="h-10 object-contain" />
       <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719504433.png" class="h-10 object-contain" />
       <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719504493.png" class="h-10 object-contain" />
@@ -34,8 +44,8 @@
 
 <!-- NAVBAR -->
 <nav class="w-full bg-blue-600 shadow text-white font-semibold">
-  <div class="container mx-auto px-4">
-    <ul class="flex flex-wrap gap-10 py-3 text-sm md:text-base">
+  <div class="container mx-auto">
+    <ul class="container flex flex-wrap gap-10 py-3 px-5 text-sm md:text-base">
       <li class="hover:text-yellow-200 ">BERANDA</li>
       <li class="hover:text-yellow-200 ">PROFILE</li>
       <li class="hover:text-yellow-200 ">INFORMASI DINAS</li>
@@ -51,47 +61,404 @@
     </ul>
   </div>
 </nav>
-<footer 
-  class="flex justify-center relative bg-white bg-no-repeat bg-bottom bg-contain pt-10 pb-36 bg-[url('https://dp3ap2kb.tegalkab.go.id/img/bg_kab.png')]">
 
-  <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20">
+<!--CONTENTTTTTTT-->
 
-    <!-- KIRI -->
-    <div class="container mx-auto mt-10 px-14">
-      <p>
-        Dinas Pemberdayaan Perempuan dan Perlindungan Anak serta Pengendalian
-        Penduduk dan Keluarga Berencana (DP3APPKB) Kabupaten Tegal
-      </p>
+<section class="bg-white">
 
-      <p class="mt-4">Jalan Merpati No. 12 Slawi Kode Pos 52419</p>
+  <!-- ================= SLIDER ATAS ================= -->
+      <div class="container mx-auto px-20 py-16">
+        <div class="swiper heroswiper max-w-7xl">
+          <div class="swiper-wrapper">
 
-      <h3 class="text-lg font-semibold mt-4">Kontak Kami</h3>
-      <p>
-        Telepon (0283) 491302<br>
-        Fax. (0283) 491302<br>
-        Email: dp3ap2kb@tegalkab.go.id
+            <!-- SLIDE 1 (yg terbaru) -->
+            <div class="swiper-slide rounded-lg overflow-hidden relative">
+              <a href="https://dp3ap2kb.tegalkab.go.id/post/komitmen-pemerintah-kabupaten-tegal-untuk-menurunkan-stunting" target="_blank">
+              <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763498536.jpg" class="w-full h-full object-cover object-[center_35%]">
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+              <h2 class="absolute bottom-10 left-10 text-white text-3xl font-bold drop-shadow-lg items-start text-left">
+                Komitmen <br> 
+                Pemerintah Kabupaten Tegal<br> 
+                untuk Menurunkan Stunting<br></h2>
+              <div class="absolute bottom-5 left-10 flex items-center gap-2 text-white text-sm opacity-90">
+                <img 
+                src="https://img.icons8.com/?size=100&id=83976&format=png&color=000000" 
+                class="w-5 h-5 invert" 
+                alt="jam">
+              <span>11 November 2025</span>
+            </div>
+             </div>
+              </a>
+            </div>
+
+             <!-- SLIDE 2 -->
+            <div class="swiper-slide rounded-lg overflow-hidden relative">
+              <a href="https://dp3ap2kb.tegalkab.go.id/post/pencapaian-kbpp-kb-pasca-persalinan" target="_blank">
+                  <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763497843.jpg" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                  <h2 class="absolute bottom-10 left-10 text-white text-3xl font-bold drop-shadow-lg items-start text-left">
+                    Pencapaian KBPP <br> 
+                    (KB Pasca Persalinan)
+                  </h2>
+                  <div class="absolute bottom-5 left-10 flex items-center gap-2 text-white text-sm opacity-90">
+                  <img src="https://img.icons8.com/?size=100&id=83976&format=png&color=000000" class="w-5 h-5 invert" alt="jam">
+                  <span>20 Oktober 2025</span>
+                  </div>
+              </div>
+              </a>
+            </div>
+
+        <!-- SLIDE 3 -->
+            <div class="swiper-slide rounded-lg overflow-hidden relative">
+              <a href="https://dp3ap2kb.tegalkab.go.id/post/pertemuan-rutin-dan-serah-terima-kepengurusan-dharma-wanita-persatuan-periode-2024-2029" target="_blank">
+              <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763497146.png" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+              <h2 class="absolute bottom-10 left-10 text-white text-3xl font-bold drop-shadow-lg items-start text-left">
+                Pertemuan Rutin dan <br>
+                Serah Terima Kepengurusan <br>
+                (Dharma Wanita Persatuan) <br>
+                Periode 2024-2029  
+              </h2>
+              <div class="absolute bottom-5 left-10 flex items-center gap-2 text-white text-sm opacity-90">
+              <img 
+                src="https://img.icons8.com/?size=100&id=83976&format=png&color=000000" 
+                class="w-5 h-5 invert" 
+                alt="jam">
+              <span>29 Mei 2025</span>
+            </div>
+             </div>
+            </a>
+            </div>
+
+            <!-- SLIDE 4 -->
+            <div class="swiper-slide rounded-lg overflow-hidden relative">
+              <a href="https://dp3ap2kb.tegalkab.go.id/post/2-penghargaan-sekaligus-dari-kementerian-kependudukan-dan-pembangunan-keluarga-bkkbn#" target="_blank">
+              <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763496322.webp" class="w-full h-full object-cover object-[50%_10%]">
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+              <h2 class="absolute bottom-10 left-10 text-white text-3xl font-bold drop-shadow-lg items-start text-left">
+                Dua Penghargaan dari<br>
+                Kementerian Kependudukan Dan <br>
+                Pembangunan Keluarga/BKKBN</h2>
+              <div class="absolute bottom-5 left-10 flex items-center gap-2 text-white text-sm opacity-90">
+              <img 
+                src="https://img.icons8.com/?size=100&id=83976&format=png&color=000000" 
+                class="w-5 h-5 invert" 
+                alt="jam">
+              <span>24 Mei 2025</span>
+            </div>
+            </div>
+            </a>
+             </div>
+
+            <!-- SLIDE 5 -->
+            <div class="swiper-slide rounded-lg overflow-hidden relative">
+              <a href="https://dp3ap2kb.tegalkab.go.id/post/pendampingan-penilaian-audit-sistem-kearsipan-internal-aski-tahun-2025" target="_blank">
+              <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763496677.jpeg" class=" mx-auto w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+              <h2 class="absolute bottom-10 left-10 text-white text-3xl font-bold drop-shadow-lg items-start text-left">
+                Pendampingan Penilaian Audit <br> Sistem Kearsipan Internal (ASKI) <br> Tahun 2025 </h2>
+                <div class="absolute bottom-5 left-10 flex items-center gap-2 text-white text-sm opacity-90">
+                <img src="https://img.icons8.com/?size=100&id=83976&format=png&color=000000" 
+                class="w-5 h-5 invert" 
+                alt="jam">
+              <span>23 Mei 2025</span>
+              </div>
+            </div></a>
+             </div>
+
+        <!-- Navigasi -->
+
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+           <div class="swiper-pagination hero-pagination mt-4"></div>
+
+            </div>
+          </div>
+      </div>
+        
+
+          <!-- ================= END SLIDER ================= -->
+
+
+  <!-- ================= CONTENT PELAYANAN DP3================= -->
+     <div class="container mx-auto px-20 py-10 max-w-7xl">
+      <div class="flex items-center mb-10 gap-4">
+      <h1 class="text-3xl font-bold mb-6">
+        PELAYANAN DP3AP2KB
+      </h1>
+      <div class="h-[2px] bg-gray-300 flex-1"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        <!-- KIRI -->
+        <div class="md:col-span-2 space-y-6">
+
+        <!-- PELAYANAN 1 -->
+        <div class="border-2 rounded-md p-5 flex gap-4 shadow hover:shadow-xl transition-shadow">
+          <div class="w-28 h-16 bg-orange-500 text-white grid place-items-center rounded-lg">
+            <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719495318.png">
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">MOP / MOW</h3>
+            <p class="text-gray-600 text-sm">
+              Tindakan kontap pada wanita disebut kontap wanita atau MOW (Metode Operasi Wanita ) atau Tubektomi, sedangkan pada pria MOP (Metoda Operasi Pria) atau vasektomi.
+            </p>
+          </div>
+        </div>
+
+        <!-- PELAYANAN 2 -->
+        <div class="border-2 rounded-md p-5 flex gap-4 shadow hover:shadow-xl transition-shadow">
+          <div class="w-20 h-16 bg-orange-500 text-white grid place-items-center rounded-lg">
+            <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719495266.png">
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Pengaduan Kekerasan Perempuan Anak</h3>
+            <p class="text-gray-600 text-sm">
+            Terkait Permasalahan Perempuan Dan Anak Termasuk Tindak Kekerasan, Anak Berhadapan Hukum dan Trafficking.           
+           </p>
+          </div>
+        </div>
+
+        <!-- PELAYANAN 3 -->
+        <div class="border-2 rounded-xl p-5 flex gap-4 shadow hover:shadow-xl transition-shadow">
+          <div class="w-30 h-16 bg-pink-500 text-white grid place-items-center rounded-lg">
+            <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719495181.png">
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">IUD Implan</h3>
+            <p class="text-gray-600 text-sm">
+            Penyisipan hanya membutuhkan waktu beberapa menit. Ini mungkin terasa tidak nyaman, seperti pemeriksaan panggul yang berkepanjangan, tapi tidak menyakitkan bagi kebanyakan wanita.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- KANAN -->
+    <div class="bg-white p-6 text-center ">
+
+      <!-- Swiper container -->
+      <div class="swiper layananSwiper">
+        <div class="swiper-wrapper">
+
+          <!-- SLIDE 1 -->
+          <div class="swiper-slide">
+            <div class="w-20 h-20 mx-auto bg-gray-300 rounded-full">
+              <img src="https://img.wattpad.com/8f19b412f2223afe4288ed0904120a48b7a38ce1/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5650722d38464e2d744a515349673d3d2d3234323931353831302e313434336539633161633764383437652e6a7067?s=fit&w=720&h=720" alt="Foto 1" class="w-full h-full object-cover rounded-full">
+            </div>
+            <h3 class="font-bold mt-4 text-lg">MEY ROKHANI, S.KM</h3>
+            <p class="text-gray-600 text-sm mb-4">Kasubag Umum dan Kepegawaian</p>
+          </div>
+
+          <!-- SLIDE 2 -->
+          <div class="swiper-slide">
+            <div class="w-20 h-20 mx-auto bg-gray-300 rounded-full">
+              <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/cd142e5f0f3227b4a13d5d26cae9ece3.jpg" alt="Foto 2" class="w-full h-full object-cover rounded-full">
+            </div>
+            <h3 class="font-bold mt-4 text-lg">CECILIA SRI RAHAYU, S.KM, M.Kes</h3>
+            <p class="text-gray-600 text-sm mb-4">Penata kependudukan dan keluarga berencana ahli muda</p>
+          </div>
+
+          <!-- SLIDE 3 -->
+          <div class="swiper-slide">
+            <div class="w-28 h-28 mx-auto bg-gray-300 rounded-full"></div>
+            <h3 class="font-bold mt-4 text-lg">TUTI HARYANI, M.KM</h3>
+            <p class="text-gray-600 text-sm mb-4">Kabid PPA</p>
+          </div>
+      </div>
+       
+        <!-- Pagination -->
+        <div class="layanan-pagination mt-4"></div>
+      </div>
+      <!-- CATEGORY -->
+        <div class="bg-white text-left">
+          <h3 class="text-sm mb-3">CATEGORIES</h3>
+          <div class="flex">
+          <!--kanan-->
+          <div>
+          <ul class="space-y-2 text-xs">
+          <li class="cursor-pointer hover:text-yellow-600">Pelayanan KB <br>Kabupaten Tegal
+            </li>
+            <li class="cursor-pointer hover:text-yellow-600">Umum</li>
+            <li class="cursor-pointer hover:text-yellow-600">Pendidikan Anak</li>
+            <li class="cursor-pointer hover:text-yellow-600">Sains</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-2 text-xs ml-10">
+            <li class="cursor-pointer hover:text-yellow-600">Olahraga</li>
+            <li class="cursor-pointer hover:text-yellow-600">Pelayanan publik</li>
+            <li class="cursor-pointer hover:text-yellow-600">Prestasi</li>
+            <li class="cursor-pointer hover:text-yellow-600">Kesehatan</li>
+          </ul>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+
+<!-- Judul Halaman -->
+<section class="py-8 text-center px-4">
+  <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-snug">
+    Komunikasi, Informasi dan Edukasi Perlindungan Perempuan<br />
+    dan Anak (KIE PPA)
+  </h1>
+</section>
+
+<!-- Berita -->
+<section class="max-w-7xl mx-auto px-4 pb-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+  <!-- Card 1 -->
+  <div class="bg-white shadow rounded-xl overflow-hidden">
+    <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1718732778.jpg"
+         class="w-full h-52 object-cover" />
+    <div class="p-4">
+      <h2 class="font-bold text-lg mb-2">Open Recruitment FASA</h2>
+      <p class="text-sm text-gray-600 mb-4">
+        Open Recruitment Fasa anggota pelindungan perempuan dan anak.
       </p>
     </div>
+  </div>
 
-    <!-- KANAN -->
-    <div class="container mx-auto">
-      <h2 class="text-4xl font-extrabold mb-8">Ikuti Kami</h2>
+  <!-- Card 2 -->
+  <div class="bg-white shadow rounded-xl overflow-hidden">
+    <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/04/1714211260.WhatsApp_Image_2024-04-27_at_16.42.57.jpeg"
+         class="w-full h-52 object-cover" />
+    <div class="p-4">
+      <h2 class="font-bold text-lg mb-2">Gala Dinner Puncak</h2>
+      <p class="text-sm text-gray-600 mb-4">
+        Peringatan Hari Kartini Tahun 2024.
+      </p>
+    </div>
+  </div>
 
-      <div class="flex flex-col gap-3 text-lg">
+  <!-- Card 3 -->
+  <div class="bg-white shadow rounded-xl overflow-hidden">
+    <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/04/1714212907.WhatsApp_Image_2024-04-27_at_17.07.14.jpeg"
+         class="w-full h-52 object-cover" />
+    <div class="p-4">
+      <h2 class="font-bold text-lg mb-2">Halal Bihalal DP3AP2</h2>
+      <p class="text-sm text-gray-600 mb-4">
+        Kegiatan Halal Bihalal DP3AP2 KB Tegal.
+      </p>
+    </div>
+  </div>
 
-        <!-- youtube -->
-        <a href="https://youtube.com/@dp3ap2kbkabtegal" target="_blank"
-           class="flex items-center text-black gap-2 hover:text-yellow-600">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>         
-            @dp3ap2kbkabtegal
+  <!-- Card 4 -->
+  <div class="bg-white shadow rounded-xl overflow-hidden">
+    <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719499115.jpeg"
+         class="w-full h-52 object-cover" />
+    <div class="p-4">
+      <h2 class="font-bold text-lg mb-2">UPTD PPA Kab. Tegal</h2>
+      <p class="text-sm text-gray-600 mb-4">
+        Informasi layanan UPTD PPA Kabupaten Tegal.
+      </p>
+    </div>
+  </div>
+  </section>
 
-        </a>
+  <section class="py-10 bg-gray-100">
+  <h1 class="text-4xl font-extrabold text-center uppercase tracking-wide">
+    PELAYANAN KB KABUPATEN TEGAL
+  </h1>
+</section>
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 pb-16">
+
+  <div class="bg-white shadow-lg rounded-3xl overflow-hidden hover:shadow-xl hover:scale-[1.02] transition duration-300 mt-10">
+    <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/08/1723173347.jpeg" class="w-full h-80 object-cover object-center">
+    <div class="p-5 text-center">
+      <a href="#" class="text-lg font-semibold hover:text-blue-600 transition">
+        Peringatan Harganas Ke - 31 Tingkat Kabupaten Tegal
+      </a>
+    </div>
+  </div>
+
+  <div class="bg-white shadow-lg rounded-3xl overflow-hidden hover:shadow-xl hover:scale-[1.02] transition duration-300 mt-10">
+    <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/09/1726861189.png" class="w-full h-80 object-cover object-center">
+    <div class="p-5 text-center">
+      <a href="#" class="text-lg font-semibold hover:text-blue-600 transition">
+        Audit Kasus Stunting (AKS) Semester 2 Tahun 2024
+      </a>
+    </div>
+  </div>
+
+  <div class="bg-white shadow-lg rounded-3xl overflow-hidden hover:shadow-xl hover:scale-[1.02] transition duration-300 mt-10">
+    <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/02/1739423602.jpeg" class="w-full h-80 object-cover object-center">
+    <div class="p-5 text-center">
+      <a href="#" class="text-lg font-semibold hover:text-blue-600 transition">
+        POSYANDU / BKB FLAMBOYAN
+      </a>
+    </div>
+  </div>
+
+  <div class="bg-white shadow-lg rounded-3xl overflow-hidden hover:shadow-xl hover:scale-[1.02] transition duration-300 mt-10">
+    <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763478417.jpg" class="w-full h-80 object-cover object-[50%_2%]">
+    <div class="p-5 text-center">
+      <a href="#" class="text-lg font-semibold hover:text-blue-600 transition">
+        Monitoring Kampung Keluarga Berkualitas
+      </a>
+    </div>
+  </div>
+
+  <div class="bg-white shadow-lg rounded-3xl overflow-hidden hover:shadow-xl hover:scale-[1.02] transition duration-300 mt-10">
+    <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763478825.jpg" class="w-full h-80 pos1 object-cover object-[50%_2%]">
+    <div class="p-5 text-center">
+      <a href="#" class="text-lg font-semibold hover:text-blue-600 transition">
+        Kegiatan Kunjungan Kaji Tiru ke Dinas P3AP2KB Kabupaten Batang
+      </a>
+    </div>
+  </div>
+
+</div>
+
+ 
+  <!-- ================= END CONTENT ================= -->
+
+    <footer 
+      class="flex justify-center relative bg-white bg-no-repeat bg-bottom bg-contain pt-10 pb-36 bg-[url('https://dp3ap2kb.tegalkab.go.id/img/bg_kab.png')]">
+
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
+
+            <!-- KIRI -->
+            <div class="mt-10 px-14">
+          <p>
+            Dinas Pemberdayaan Perempuan dan Perlindungan Anak serta Pengendalian
+            Penduduk dan Keluarga Berencana (DP3APPKB) Kabupaten Tegal
+          </p>
+
+          <p class="mt-4">Jalan Merpati No. 12 Slawi Kode Pos 52419</p>
+
+          <h3 class="text-lg font-semibold mt-4">Kontak Kami</h3>
+          <p>
+            Telepon (0283) 491302<br>
+            Fax. (0283) 491302<br>
+            Email: dp3ap2kb@tegalkab.go.id
+          </p>
+        </div>
+
+        <!-- KANAN -->
+        <div class="container mx-auto">
+          <h2 class="text-4xl font-extrabold mb-8">Ikuti Kami</h2>
+
+          <div class="flex flex-col gap-3 text-lg">
+
+            <!-- youtube -->
+            <a href="https://youtube.com/@dp3ap2kbkabtegal" target="_blank"
+              class="flex items-center text-black gap-2 hover:text-yellow-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>         
+                @dp3ap2kbkabtegal
+
+            </a>
 
         <!-- instagram -->
         <a href="https://instagram.com/dp3ap2kbkabtegal" target="_blank"
            class="flex items-center gap-2  text-black gap-2 hover:text-yellow-600">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
-           @dp3ap2kbkabtegal
+           dp3ap2kbkabtegal
         </a>
 
         <!-- Twitter (X) -->
@@ -127,7 +494,38 @@
      <div class=" bg-blue-500 text-white text-center py-6">
         <p> © 2019 Dinas Pemeberdayaan Perempuan, Perlindungan Anak, Pengendalian Penduduk dan Keluarga Berencana.</p>
         </div>
+        <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <script>
+    var heroswiper = new Swiper(".heroswiper", {
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 20,
+      pagination: {
+        el: ".hero-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+      },
+    });
+      var layananSwiper = new Swiper(".layananSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: ".layanan-pagination",
+        clickable: true
+      },
+      breakpoints: {
+        768: { slidesPerView: 1 }
+      }
+    });
+  </script>
 
-</body>
+</div>
 </html>
