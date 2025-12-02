@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BARU</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  
+  <style>
+      .swiper {
+        width: 100%;
+        height: 500px;
+      }  
+      @media (max-width: 768px) {
+
+       #slideratas {
+          margin-bottom: 22px ;
+        }
+
+        .swiper-wrapper {
+          padding-bottom: 10px ;
+        }
+      }
+    </style>
+</head>
+
+<body>
+  <header>
+    <section id="hero" class="container mx-auto bg-white items-center ">
+      <div class="flex container justify-between w-full p-4">
+
+         <!-- KIRI LOGO -->
+      <div class="items-center space-x-5 px-6">
+        <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/04/1714202466.1712648438.logo.png" 
+          class="w-28 md:w-full object-contain"/>
+      </div>
+      <!--  KANAN LOGO-->
+      <div class="hidden md:flex justify-end gap-6">
+        <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719504224.png" class="h-10 object-contain" />
+        <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719504433.png" class="h-10 object-contain" />
+        <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719504493.png" class="h-10 object-contain" />
+        <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719504795.png" class="h-10 object-contain" />
+      </div>
+
+      <button id="btnMenu" class="md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+     </button>
+      </div>
+    </section>
+
+    <section id="nav" class="">
+
+      <!--nav deks-->
+    <nav class="hidden md:block w-full bg-blue-600 shadow text-white font-semibold">
+    <div class="container mx-auto">
+      <ul class="container flex flex-wrap gap-10 py-3 px-5 text-sm md:text-base">
+        <li class="hover:text-yellow-200 ">BERANDA</li>
+        <li class="hover:text-yellow-200 ">PROFILE</li>
+        <li class="hover:text-yellow-200 ">INFORMASI DINAS</li>
+        <li class="hover:text-yellow-200 ">BERITA</li>
+        <li class="hover:text-yellow-200 r">PENGUMUMAN</li>
+        <li class="hover:text-yellow-200 ">INOVASI</li>
+        <li class="hover:text-yellow-200 ">GALLERY</li>
+        <li class="hover:text-yellow-200 ">DOWNLOAD</li>
+        <li class="hover:text-yellow-200 ">PPID</li>
+        <li class="hover:text-yellow-200 ">FAQ</li>
+        <li class="hover:text-yellow-200 ">HUBUNGI KAMI</li>
+      </ul>
+    </div>
+    </nav>
+
+    <!--nav-mobile-->
+ 
+      <nav id="mobileMenu" class="md:hidden hidden w-full bg-blue-600 text-white font-semibold">
+        <ul class="flex flex-col px-5 pb-4 text-sm">
+          <li class="py-2 border-b border-blue-500">BERANDA</li>
+          <li class="py-2 border-b border-blue-500">PROFILE</li>
+          <li class="py-2 border-b border-blue-500">INFORMASI DINAS</li>
+          <li class="py-2 border-b border-blue-500">BERITA</li>
+          <li class="py-2 border-b border-blue-500">PENGUMUMAN</li>
+          <li class="py-2 border-b border-blue-500">INOVASI</li>
+          <li class="py-2 border-b border-blue-500">GALLERY</li>
+          <li class="py-2 border-b border-blue-500">DOWNLOAD</li>
+          <li class="py-2 border-b border-blue-500">PPID</li>
+          <li class="py-2 border-b border-blue-500">FAQ</li>
+          <li class="py-2">HUBUNGI KAMI</li>
+        </ul>
+      </nav>
+    </section>
+     </header>
+  <!--END HEADERRRRRR-->
+
+  <main>
+     <!-- Section berita -->
+    <section id="berita" class="container mx-auto px-4 mt-20 mb-8 md:mb-16">
+      <h1 class="text-center md:text-left text-2xl md:text-3xl font-bold mb-10 border-b pb-3">HIGLIGHTED NEWS</h1>
+      <!-- BERITA UTAMA -->
+      <div class="max-w-7xl mx-auto px-8 py-10">
+  <!-- GRID 2 KOLOM -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+    <!-- KIRI (hero) -->
+    <div class="lg:col-span-2 relative h-96 rounded-xl overflow-hidden">
+      <img 
+        src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763498536.jpg"
+        class="w-full h-full object-cover scale-"
+      />
+      <div class="absolute inset-0 bg-black/30 flex flex-col justify-end p-6">
+        <h2 class="text-white text-2xl font-semibold">
+         Komitmen Pemerintah Kabupaten Tegal Untuk Menurunkan Stunting
+        </h2>
+        <!-- info -->
+         <div class="text-gray-200 text-sm mt-1">
+          by Dinas PA3
+          12 November 2025
+         </div>
+      </div>
+    </div>
+
+    <!-- KANAN (featured posts) -->
+    <div class="space-y-3 max-h-96 overflow-y-auto pr-2">
+      <h3 class="font-semibold text-lg mb-1">Other featured posts</h3>
+
+      <!-- Item -->
+      <div class="flex gap-3 border-b pb-2 cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-100 hover:shadow-sm">
+        <div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
+          <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763497843.jpg" class="w-full h-full object-cover" />
+        </div>
+        <p class="text-sm leading-tight">
+          Pencapaian KBPP (KB Pasca Persalinan)
+        </p>
+      </div>
+
+      <div class="flex gap-3 border-b pb-3 cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-100 hover:shadow-sm">
+        <div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
+          <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763497146.png" class="w-full h-full object-cover" />
+        </div>
+        <p class="text-sm leading-tight">
+          Pertemuan Rutin dan Serah Terima Kepengurusan (Dharma Wanita Persatuan) Periode 2024-2029
+        </p>
+    </div>
+
+      <div class="flex gap-3 border-b pb-3 cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-100 hover:shadow-sm">
+        <div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
+          <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/07/1751419889.jpeg" class="w-full h-full object-cover" />
+        </div>
+        <p class="text-sm leading-tight">
+          Penyerahan Sembako dari DWP Kab. Tegal
+        </p>
+    </div>
+
+    <div class="flex gap-3 border-b pb-3 cursor-pointer rounded-lg transition-all duration-300 hover:bg-gray-100 hover:shadow-sm">
+        <div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
+          <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763496322.webp" class="w-full h-full object-cover" />
+        </div>
+        <p class="text-sm leading-tight">
+          2 Penghargaan Sekaligus dari Kementrian Kependudukan dan Pembangunan Keluarga/BKKBN
+        </p>
+    </div>
+
+  </div>
+</div>
+
+    </section>
+
+
+   <!-- Recent Post -->
+    <section class="container mx-auto px-4 mt-20 mb-8 md:mb-16">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-2xl font-bold">Recent all post</h2>
+          <a href="#" class="text-black font-medium">All post</a>
+        </div>
+      </div>
+      
+
+<!-- Grid Card -->
+<div class="max-w-7xl mx-auto px-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Card 1 -->
+    <div class="p-4 border rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg">
+      <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763497447.webp"
+           class="h-40 w-full object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-lg">Persiapan Puncak Peringatan Hari Jadi ke-424 Kabupaten Tegal Tahun 2025</h4>
+      <p class="text-sm text-gray-600">Rapat Persiapan Puncak Peringatan Hari Jadi ke - 424 Kabupaten Tegal Tahun 2025...</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="p-4 border rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg">
+      <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763481454.jpg"
+           class="h-40 w-full object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-lg">Launching Sekolah Lansia MNU Mar'atussoliha Kec. Pagerbarang</h4>
+      <p class="text-sm text-gray-600">Bapak Plt Kepala Dinas P3AP2 dan KB Kab. Tegal meresmikan Launching Sekolah Lansia...</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="p-4 border rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg">
+      <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763495978.jpg"
+           class="h-40 w-full object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-lg">Safari Pelayanan KB GRATIS Dalam Rangka HUT IBI ke-74 Tahun 2025</h4>
+      <p class="text-sm text-gray-600">alo sobat KB, ada lagi nih Safari Pelayanan KB GRATIS dalam rangka HUT IBI Ke-74 Tahun 2025. Catat tanggalnya ya📍 Puskesmas Dukuhturi🗓️ Jum'at, 16 Me...</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="p-4 border rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg">
+      <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763491427.jpeg"
+           class="h-40 w-full object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-lg">Selamat Hari Raya Idul Fitri 1 Syawal 1446 H</h4>
+      <p class="text-sm text-gray-600">تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ وَ تَقَبَّلْ Taqabbalallahu minna wa minkum wa taqabbal ya kariim 🙏🙏 Minal 'aidin wal faizin. Semoga...</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="p-4 border rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg">
+      <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763490886.jpg"
+           class="h-40 w-full object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-lg">Penyusunan Renstra Dinas P3AP2 dan KB Tahun 2025-2029</h4>
+      <p class="text-sm text-gray-600">Telah dilaksanakan rapat internal penyusunan Renstra Dinas P3AP2 dan KB tahun 2025 - 2029. (26/03/25) Acara ini dipimpin oleh Sekretaris Dinas dengan...</p>
+    </div>
+
+     <!-- Card 6 -->
+    <div class="p-4 border rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg">
+      <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763482299.jpg"
+           class="h-40 w-full object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-lg">Pemantauan Pelaksanaan Forum Perangkat Daerah Tahun 2025</h4>
+      <p class="text-sm text-gray-600">Forum Perangkat Daerah merupakan forum sinkronisasi pelaksanaan urusan pemerintahan daerah untuk merumuskan program dan kegiatan sesuai dengan tugas</p>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="p-4 border rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg">
+      <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763478825.jpg"
+           class="h-40 w-full object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-lg">Melaksanakan Kegiatan Kunjungan Kaji Tiru ke Dinas P3AP2KB Kabuoaten Batang</h4>
+      <p class="text-sm text-gray-600">Dinas P3AP2 dan KB Kab Tegal telah melaksanakan kegiatan kunjungan kaji tiru ke Dinas P3AP2KB Kab. Batang. (24-12-24) Dengan kegiatan ini diharapkan..</p>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="p-4 border rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg">
+      <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763478417.jpg"
+           class="h-40 w-full object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-lg">Monitoring dan Evaluasi Penyelenggaraan Kampung Keluarga Berkualitas (KB)</h4>
+      <p class="text-sm text-gray-600">Monitoring dan Evaluasi penyelenggaraan Kampung Keluarga Berkualitas (KB) Di Desa Pagerbarang Kec. Pagerbarang dipimpin oleh dr Titis Cahyaningsih, MM....</p>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="p-4 border rounded-xl cursor-pointer transition-all duration-300 hover:shadow-lg">
+      <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/07/1751420938.jpg"
+           class="h-40 w-full object-cover rounded-lg mb-3">
+      <h4 class="font-semibold text-lg">Manfaat Keluarga Berencana Pasca Persalinan (KBPP)</h4>
+      <p class="text-sm text-gray-600">Apa Itu KB PP atau KB Pasca Persalinan?KB Pasca Persalinan adalah pelayanan KB yang diberikan setelah persalinan sampai dengan 42 hari.Apa saja Manfaa...</p>
+    </div>
+
+   <!-- Card 10 -->
+    
+  </div>
+</div>
+
+     </main>
+
+
+     <footer>
+    <section id="footer" class="mt-20">
+      <div class="flex justify-center relative bg-white bg-no-repeat bg-bottom bg-contain pt-10 pb-36 bg-[url('https://dp3ap2kb.tegalkab.go.id/img/bg_kab.png')]">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
+
+          <!-- KIRI -->
+          <div class="mt-10 px-14">
+          <p>
+            Dinas Pemberdayaan Perempuan dan Perlindungan Anak serta Pengendalian
+            Penduduk dan Keluarga Berencana (DP3APPKB) Kabupaten Tegal
+          </p>
+
+          <p class="mt-4">Jalan Merpati No. 12 Slawi Kode Pos 52419</p>
+
+          <h3 class="text-lg font-semibold mt-4">Kontak Kami</h3>
+          <p>
+            Telepon (0283) 491302<br>
+            Fax. (0283) 491302<br>
+            Email: dp3ap2kb@tegalkab.go.id
+          </p>
+        </div>
+
+        <!-- KANAN -->
+        <div class="container mx-auto">
+          <h2 class="text-4xl font-extrabold mb-8 px-5 md:px-0">Ikuti Kami</h2>
+          <div class="flex flex-col gap-3 text-lg">
+
+        <!-- youtube -->
+        <a href="https://youtube.com/@dp3ap2kbkabtegal" target="_blank"
+          class="flex items-center text-black gap-2 hover:text-yellow-600 px-5 md:px-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>         
+          @dp3ap2kbkabtegal
+          </a>
+
+        <!-- instagram -->
+        <a href="https://instagram.com/dp3ap2kbkabtegal" target="_blank"
+           class="flex items-center gap-2  text-black gap-2 hover:text-yellow-600 px-5 md:px-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+           dp3ap2kbkabtegal
+        </a>
+
+        <!-- Twitter (X) -->
+        <a href="https://twitter.com/@p3ap2kbkabtegal" target="_blank"
+           class="flex items-center gap-2  text-black gap-2 hover:text-yellow-600 px-5 md:px-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+           @p3ap2kbkabtegal
+        </a>
+        </div>
+
+      <h3 class="text-xl font-bold mt-6 px-5 md:px-0">
+        Layanan Aspirasi dan Pengaduan Online Rakyat
+      </h3>
+
+      <!-- LAPOR -->
+       <div class="px-5 md:px-0">
+         <a href="https://www.lapor.go.id/" class="inline-block mt-3 bg-red-600">
+        <img src="https://www.lapor.go.id/themes/lapor/assets/images/logo-white.png"
+             alt="Lapor"
+             class="w-40">
+      </a>
+       </div>
+     
+
+      <h3 class="text-xl font-bold mt-6 px-5 md:px-0">Lapor Bupati Tegal</h3>
+
+      <!-- GOOGLE PLAY -->
+      <a href="https://play.google.com/store/apps/details?id=id.lapor.bupati3" class="inline-block mt-3 px-5 md:px-0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+             alt="Google Play"
+             class="w-48">
+      </a>
+      </div>
+      </div>
+      </div>
+</section>
+     <div class=" bg-blue-500 text-white text-center py-6">
+        <p> © 2019 Dinas Pemeberdayaan Perempuan, Perlindungan Anak, Pengendalian Penduduk dan Keluarga Berencana.</p>
+        </div>
+ </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var heroswiper = new Swiper(".heroswiper", {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: ".hero-pagination",
+        clickable: true,
+      },
+      navigation: {
+         nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+      },
+    });
+      var layananswiper = new Swiper(".layananswiper", {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: ".layanan-pagination",
+        clickable: true
+      },
+      autoplay: {
+        delay: 3000,
+      },
+    });
+  </script>
+  <script>
+    const menuBtn = document.getElementById("btnMenu");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+    </script>
+
+</body>
+</html>
