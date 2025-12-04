@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BARU</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
   <style>
+    
       .swiper {
         width: 100%;
         height: 500px;
@@ -24,12 +24,15 @@
           padding-bottom: 10px ;
         }
       }
+       [data-aos="fade-up"] {
+    transform: translateY(0px) !important;
+  }
     </style>
 </head>
 
 <body>
   <header>
-    <section id="hero" class="container mx-auto bg-white items-center ">
+    <section id="hero" class="container mx-auto bg-white items-center">
       <div class="flex container justify-between w-full p-4">
       <!-- KIRI LOGO -->
       <div class="items-center space-x-5 px-6">
@@ -208,7 +211,7 @@
       <div class="md:col-span-2 space-y-6">
 
       <!-- ================= CONTENT PELAYANAN DP3================= -->
-    <section id="pelayanan" class="container mx-auto flex flex-col gap-4">
+      <section id="pelayanan" class="container mx-auto flex flex-col gap-4">
         <div class="flex items-center mb-10 gap-4 whitespace-nowrap">
         <h1 class="text-center md:text-left text-2xl md:text-3xl font-bold">
           PELAYANAN DP3AP2KB
@@ -217,6 +220,7 @@
         </div>
 
         <!-- PELAYANAN 1 -->
+        <div data-aos="fade-up">
         <div class="border-2 rounded-md p-5 flex flex-col md:flex-row gap-4 hover:shadow-lg transition-shadow">
           <div class="mx-auto md:mx-0 w-20 h-16 md:w-28 md:h-16 bg-orange-500 text-white grid place-items-center rounded-lg mb-2 ">
             <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719495318.png" class="object-cover">
@@ -228,8 +232,10 @@
             </p>
           </div>
         </div>
+        </div>
 
         <!-- PELAYANAN 2 -->
+        <div data-aos="fade-up">
         <div class="border-2 rounded-md p-5 flex flex-col md:flex-row gap-4 hover:shadow-lg transition-shadow">
          <div class="mx-auto md:mx-0 w-20 h-16 md:w-28 md:h-16 bg-orange-500 text-white grid place-items-center rounded-lg mb-2 ">
           <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719495266.png" class="object-cover">
@@ -240,9 +246,11 @@
             Terkait Permasalahan Perempuan Dan Anak Termasuk Tindak Kekerasan, Anak Berhadapan Hukum dan Trafficking.           
            </p>
           </div>
+          </div>
         </div>
 
         <!-- PELAYANAN 3 -->
+        <div data-aos="fade-up">
         <div class="border-2 rounded-xl p-5 flex flex-col md:flex-row gap-4 hover:shadow-lg transition-shadow">
           <div class="mx-auto w-20 h-16 md:w-32 md:h-16 bg-pink-500 text-white grid place-items-center rounded-lg">
             <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719495181.png">
@@ -254,17 +262,21 @@
             </p>
           </div>
         </div>
+      </div>
     </section>
 
        <!-- === SECTION PELAYANAN APLIKASI === -->
     <section class="container mx-auto mt-4 py-10">
+        <div data-aos="fade-up">
         <div class="flex items-center gap-4 mb-8">
         <h2 class="text-center md:text-left text-2xl md:text-3xl font-bold whitespace-nowrap">PELAYANAN APLIKASI</h2>
         <div class="h-[2px] bg-gray-300 w-full"></div>
         </div>
+        </div>
         <div class="grid md:grid-cols-2 gap-6">
 
             <!-- ITEM -->
+            <div data-aos="fade-up">
             <div class="flex flex-wrap border rounded-md p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
             <div class="flex items-start gap-4">
                 <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719501851.png" class="w-14 h-14 bg-orange-400 mt-5" />
@@ -275,7 +287,9 @@
                 </div>
                 </div>
             </div>
+            </div>
 
+            <div data-aos="fade-up">
             <div class="flex flex-wrap border rounded-md p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
             <div class="flex items-start gap-4">
                 <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719501253.png" class="w-14 h-14 mt-5" />
@@ -286,7 +300,9 @@
                 </div>
             </div>
             </div>
+            </div>
 
+            <div data-aos="fade-up">
             <div class="flex flex-wrap border rounded-md p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
             <div class="flex items-start gap-4">
                 <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/10/1730021344.png" class="w-14 h-14 bg-yellow-400 mt-5" />
@@ -297,13 +313,14 @@
                 </div>
             </div>
             </div>
+            </div>
 
-            <div class="flex flex-wrap border rounded-md p-4 shadow-sm hover:shadow-md transition-shadow cursor cursor-pointer">
+            <div class="flex flex-wrap border rounded-md p-4 shadow-sm hover:shadow-md transition-shadow cursor cursor-pointer" data-aos="fade-up">
             <div class="flex items-start gap-4">
-                <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719501486.png" class="w-14 h-14 mt-5" />
+                <img src="https://dp3ap2kb.tegalkab.go.id/storage/2024/06/1719501486.png" class="w-14 h-14 mt-5 flex-shrink-0" />
                 <div>
                 <div class="flex text-yellow-500 text-sm mb-1">★★★★★</div>
-                <h3 class="font-semibold">Sistem Informasi Keluarga</h3>
+                <h3 class="font-semibold">Sistem Informasi Keluarga </h3>
                 <div>
                     <a href ="https://siga.bkkbn.go.id/" target="_blank"></a>
                 <p class="text-sm text-blue-600 hover:text-yellow-400">https://siga.bkkbn.go.id/</p>
@@ -311,18 +328,20 @@
                 </div>
             </div>
             </div>
-        </div>
+          </div>
         
     </section>
 
 
       <!-- === SECTION PELAYANAN PUBLIK === -->
     <section id="publik" class="container mx-auto grid md:grid-cols-2 gap-6 py-10">
-      <div class="md:col-span-2">
+     <div class="md:col-span-2">
+       <div data-aos="fade-up">
         <h2 class="text-center md:text-left text-2xl md:text-3xl font-bold mb-4 whitespace-nowrap">PELAYANAN PUBLIK</h2>
         <div class="h-[2px] bg-gray-300 w-full"></div>
+        </div>
 
-        <div class="container flex flex-col md:flex-row p-8 md:p-4 gap-10 ">
+        <div class="container flex flex-col md:flex-row p-8 md:p-4 gap-10 " data-aos="fade-up">
             <!--kiri-->
             <div>
                 <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763481703.webp" class="w-80 object-cover rounded-md mb-4 md:mb-0 "/>
@@ -337,24 +356,27 @@
             Pembelajaran menjelang ramadhan bersama SL Bakti Ibu Kedungkelor, SL Edelweis Dinuk dan IRL Jawa Tengah...
             </p>
             </div>
+           </div>
         </div>
-        </div>
-           <div class="border-2 p-4 flex flex-col md:flex-row gap-4 mt-1 md:mt-0 hover:shadow-md rounded-xl cursor-pointer">
+
+             <div class="border-2 p-4 flex flex-col md:flex-row gap-4 mt-1 md:mt-0 hover:shadow-md rounded-xl cursor-pointer" data-aos="fade-up">
                 <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763481703.webp" class="w-28 h-20 md:w-16 md:h-16 rounded-md mx-auto md:mx-0 mb-2 md:mb-0"/>
                    <div> <p class="bold text-sm items-center text-center md:items-start md:text-left font-bold">Pembelajaran Menjelang Ramadhan Bersama Sekolah Lansia Bakti Edelweis Dinuk</p>
                     <p class="text-xs items-center text-center md:items-start md:text-left text-gray-500"> 18 November 2025</p></div>
                 </div>
-                <div class="border-2 p-4 flex flex-col md:flex-row gap-4 mt-1 md:mt-0 hover:shadow rounded-xl cursor-pointer">
+
+                <div class="border-2 p-4 flex flex-col md:flex-row gap-4 mt-1 md:mt-0 hover:shadow rounded-xl cursor-pointer" data-aos="fade-up">
                 <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763484053.webp" class="w-28 h-20 md:w-16 md:h-16 rounded-md mx-auto md:mx-0 mb-2 md:mb-0"/>
                 <div><p class="bold text-sm items-center text-center md:items-start md:text-left font-bold">Zoom Meeting dalam rangka implementasi program Quick Win Taman Asuh Sayang Anak (TAMASYA) bersama Si DAYA</p>
                     <p class="text-xs items-center text-center md:items-start md:text-left text-gray-500"> 18 November 2025</p></div>
                 </div>
-                <div class="border-2 p-4 flex flex-col md:flex-row gap-4 mt-1 md:mt-0 hover:shadow rounded-xl cursor-pointer">
+          
+                <div class="border-2 p-4 flex flex-col md:flex-row gap-4 mt-1 md:mt-0 hover:shadow rounded-xl cursor-pointer" data-aos="fade-up">
                 <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763482060.webp" class="w-28 h-20 md:w-16 md:h-16 rounded-md mx-auto md:mx-0 mb-2 md:mb-0"/>
                 <div><p class="bold text-sm items-center text-center md:items-start md:text-left font-bold">Pelantikan Bupati dan Wakil Bupati Tegal Masa Jabatan Tahun 2025-2030</p>
                     <p class="text-xs items-center text-center md:items-start md:text-left text-gray-500"> 18 November 2025</p></div>
                 </div>
-                <div class="border-2 p-4 flex flex-col md:flex-row gap-4 mt-1 md:mt-0 hover:shadow cursor-pointer rounded-xl">
+                <div class="border-2 p-4 flex flex-col md:flex-row gap-4 mt-1 md:mt-0 hover:shadow cursor-pointer rounded-xl" data-aos="fade-up">
                 <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763493992.png" class="w-28 h-20 md:w-16 md:h-16 rounded-md mx-auto md:mx-0 mb-2 md:mb-0"/>   
                 <div><p class="bold text-sm items-center text-center md:items-start md:text-left font-bold">Pencanangan Pelayanan Safari KB Milad Aisyiyah tahun 2025 Kabupaten Tegal</p>
                     <p class="text-xs items-center text-center md:items-start md:text-left text-gray-500"> 18 November 2025</p></div>
@@ -367,49 +389,49 @@
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
 
       <!-- ITEM -->
-      <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer">
+      <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763485246.jpeg" class="w-full h-full object-cover" alt="">
       </div>
-      <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer">
+      <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763485257.jpeg" class="w-full h-full object-cover" alt="">
       </div>
-      <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer">
+      <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/storage/2025/11/1763485264.jpeg" class="w-full h-full object-cover" alt="">
       </div>
-      <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer">
+      <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/da1ed3f069873975c598d99fca596f45.jpg" class="w-full h-full object-cover" alt="">
       </div>
-      <div class="w-full aspect-[4/3] overflow-hidden rounded-lg shadow cursor-pointer">
+      <div class="w-full aspect-[4/3] overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/fda87d930ae11094b488cfadf3ff720f.jpg" class="w-full h-full object-cover" alt="">
       </div>
-      <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer">
+      <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/19ac3b80dbf8ddca5383c2e3b3117aa6.jpg" class="w-full h-full object-cover" alt="">
       </div>
-       <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer">
+       <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/9d576337cf06a0c223f59204e296182d.jpg" class="w-full h-full object-cover" alt="">
       </div>
-       <div class="w-full aspect-[4/3] overflow-hidden rounded-lg shadow cursor-pointer">
+       <div class="w-full aspect-[4/3] overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/0c578defe142c89d0641fada3326f292.jpg" class="w-full h-full object-cover" alt="">
       </div>
-       <div class="w-full aspect-[4/3]overflow-hidden rounded-lg shadow cursor-pointer">
+       <div class="w-full aspect-[4/3]overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/646f21f5b3015d9cfe178416c1e948e9.jpeg" class="w-full h-full object-cover" alt="">
        </div>
-        <div class="w-full overflow-hidden rounded-lg shadow cursor-pointer">
+        <div class="w-full overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/7603de25d8bb680e35c1e7af99e95e49.JPG" class="w-full h-full object-cover  scale-110" alt="">
         </div>
-         <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer">
+         <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/c9561a45202eb1d9b9d4f0fe3733b117.jpg" class="w-full h-full object-cover" alt="">
         </div>
-         <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer">
+         <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/3cc2b0b7da4ec43690c5c14d8214cd97.jpg" class="w-full h-full object-cover" alt="">
         </div>
-         <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer">
+         <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/a56f06cda11c7306f37ecf45d77ac668.jpg" class="w-full h-full object-contain" alt="">
         </div>
-         <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer">
+         <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/c15a608bfa66fe0162910736d31dae7e.jpg" class="w-full h-full object-cover" alt="">
         </div>
-         <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer">
+         <div class="w-full h-40 overflow-hidden rounded-lg shadow cursor-pointer" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/c133e39cfe8fcfc524d569da024ec18e.jpg" class="w-full h-full object-cover" alt="">
         </div>
         </div>
@@ -420,7 +442,7 @@
       <h1 class="text-center md:text-left text-2xl md:text-3xl font-bold mb-10 border-b pb-3">UMUM</h1>
 
       <!-- BERITA UTAMA -->
-      <div class="flex flex-col md:flex-row mb-8 md:mb-10 gap-10">
+      <div class="flex flex-col md:flex-row mb-8 md:mb-10 gap-10" data-aos="fade-up">
         <img src="https://dp3ap2kb.tegalkab.go.id/assets/images/10d0d4bb86803c85f26918ce29fbcbc0.jpg" 
             class="mx-auto md:mx-0 w-full h-72 md:w-72 md:h-72 rounded-md object-cover shadow">
         <div class="mt-10">
@@ -441,7 +463,7 @@
       </div>
 
         <!-- LIST BERITA DI BAWAH GAMBAR UTAMA -->
-        <div class="grid grid-cols-1 md:grid-cols-2 space-y-4 gap-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 space-y-4 gap-2" data-aos="fade-up">
 
           <!-- GAMBAR 1 -->
           <a href="https://dp3ap2kb.tegalkab.go.id/post/pelayanan-kb-gratis"
@@ -521,7 +543,7 @@
 
     <!--KANAAAAN-->
     <section id="sliderkanan" class="grid-cols-1">
-      <div class="bg-white p-6 text-center ">
+      <div class="bg-white p-6 text-center " data-aos="fade-up">
 
       <!-- Swiper container -->
       <div class="swiper layananswiper h-60">
@@ -622,7 +644,7 @@
       </div>
 
       <!-- CATEGORY -->
-        <div class="bg-white text-left mt-6">
+        <div class="bg-white text-left mt-6" data-aos="fade-up">
           <h3 class="text-sm mb-3 font-bold">CATEGORIES</h3>
           <div class="flex">
           <!--kanan-->
@@ -648,7 +670,7 @@
     </div>
 
         <!-- === SIDEBAR POST TERBARU === -->
-      <aside class="container mx-auto px-5 py-6">
+      <aside class="container mx-auto px-5 py-6" data-aos="fade-up">
         <h2 class="text-lg font-bold mb-4">POST TERBARU</h2>
 
         <div class="space-y-4">
@@ -684,7 +706,7 @@
 
       <!-- SECTION KIE PPA -->
   <section id="kie-ppa" class=" bg-gray-50 py-24">
-    <div class="container mx-auto px-4 text-center">
+    <div class="container mx-auto px-4 text-center" data-aos="fade-up">
 
       <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-snug mb-12">
         Komunikasi, Informasi dan Edukasi Perlindungan Perempuan<br>
@@ -692,7 +714,7 @@
       </h1>
 
       <!-- Grid card -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-4" data-aos="fade-up">
 
         <!-- Card 1 -->
         <article class="bg-white shadow rounded-xl overflow-hidden hover:shadow-xl transition cursor-pointer">
@@ -737,7 +759,7 @@
 
   <!-- SECTION PELAYANAN KB -->
   <section id="pelayanan-kb" class="py-24 bg-gray-100">
-    <div class="container mx-auto px-6">
+    <div class="container mx-auto px-6" data-aos="fade-up">
 
       <h1 class="text-4xl font-extrabold text-center uppercase tracking-wide mb-12">
         Pelayanan KB Kabupaten Tegal
@@ -911,6 +933,11 @@
       mobileMenu.classList.toggle("hidden");
     });
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>
+     
